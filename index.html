@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="flag english"></div>
+        <div class="flag latvian"></div>
+        <div class="mypicture"></div>
+        <h3>Sindija Daugule</h3>
+        <div class="sidebutton" id="showAbout">about</div>
+        <div class="sidebutton" id="showSkills">skills</div>
+        <div class="sidebutton" id="showPortfolio">portfolio</div>
+        <div class="sidebutton" id="showGallery">gallery</div>
+        <div class="sidebutton" id="showPlayground">playground</div>
+        <div
+          class="arrowleft"
+          title="hide sidebar"
+          id="hideSidebar" >
+        </div>
+        <div class="contacts">
+          <div class="contact-me">Contact me: </div>
+          <a
+            href="https://www.facebook.com/Sindzha"
+            class="contacticon facebook"
+            target="blank"
+          ></a>
+          <a
+            href="https://www.instagram.com/s_biker_dog/?hl=en"
+            class="contacticon instagram"
+            target="blank"
+          ></a>
+        </div>
+      </div>
+      <div class="contentfield about">
+       <div class="titlebox">
+       <h1>Hi, I'm Sindija</h1> </div>
+          <div class="aboutblock aboutblock1">
+            <span
+              >A nature lover, a cat person and a proud motorcycle rider</span
+            >
+            <div class="aboutpicture1"></div>
+          </div>
+          <div class="aboutblock aboutblock2">
+            <div class="aboutpicture2"></div>
+            <span
+              >New web developer with a little bit of expierence and a <br />
+              whole bunch of enthusiasm towards success and professional <br />
+              growth</span
+            >
+          </div>
+      </div>
+      <div class="contentfield skills">
+        <div class="titlebox">
+        <h1>Skills</h1></div>
+        <div class="skillscontent">
+          <div class="innercircle innercircle1 " id="showhtml"></div>
+          <div class="innercircle innercircle2" id="showcss"></div>
+          <div class="innercircle innercircle3" id="showjavascript"></div>
+          <div class="innercircle innercircle5 " id="showphp"></div>
+        </div>
+      </div>
+      <div class="contentfield portfolio">
+        <div class="titlebox">
+        <h1>Portfolio</h1></div>
+        <div class="portfoliomain">
+         <div class="card">
+                   <div class="cardpic mogo"></div>
+                   <span> <p> Mogo</p> Html <br> Css <br> <br>
+                   <a href="https://sindijad.github.io/Mogo/"  class="visit" target="blank">visit site</a>
+                   </span>
+                 </div>
+         <div class="card">
+               <div class="cardpic loginpage"></div>
+                 <span> <p> Login/registration page</p> html <br> css/responsive <br> laravel/mysql<a href="/login"  class="visit" target="blank">visit site</a>
+                 </span>
+               </div>
+         <div class="card">
+               <div class="cardpic todolist"></div>
+                 <span> <p> To do list</p> html <br> css <br> JQuerry        <a href="https://sindijad.github.io/todolist/"  class="visit" target="blank">visit site</a>
+                 </span>
+               </div>
+       
+        </div>
+       </div>
+             <div class="contentfield gallery">
+        <div class="titlebox">
+        <h1>gallery</h1></div>
+      </div>
+            <div class="contentfield playground">
+              <div class="titlebox">
+              <h1>Playground</h1></div>
+              <div class="playgroundcontainer">
+                <div action="" class="summingfunc">
+                  <input type="text" placeholder="enter the number" class="firstnumber field">
+                  <select class="field pluss" id="select">
+                    <option value="+" >+</option>
+                    <option value="-" >-</option>
+                    <option value="*" >*</option>
+                    <option value="/" >/</option>
+                  <input type="text" placeholder="enter the number" class="secondnumber field">
+                 <button class="submit field">submit</button>
+      <div class="answer field">answer</div>
+                </div>
+              </div>
+            </div>
+            </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nothing+You+Could+Do&family=Parisienne&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --maincolor: rgb(255, 221, 220);
+  --color2: rgb(143, 9, 80);
+  --color3: rgb(151, 151, 151);
+  --myfont1: "Nothing You Could Do", cursive;
+  --myfont2: "Indie Flower", cursive;
+  --myfont3: "Parisienne", cursive;
+}
+a {
+  text-decoration: none;
+}
+body {
+  position: relative;
+  overflow-y: scroll;
+  background-image: url(./img/texture4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(./img/pinkcloud.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 2px solid var(--color3);
+  position: fixed;
+  z-index: 1;
+}
+.flag {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.english {
+left: 5px;
+background-image: url(./img/icons/english.png);
+}
+.latvian {
+  top: 30px;
+left: 5px;
+background-image: url(./img/icons/latvian.jpeg);
+}
+.mypicture {
+  width: 130px;
+  height: 130px;
+  background-image: url(./img/me.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border-radius: 50%;
+  border: var(--color3) 1px solid;
+  margin: 10px auto 10px auto;
+}
+@keyframes rainbow {
+  0% {color: #9400D3 ;}
+  15% {color: #4B0082;}
+  30% {color: #0000ff;}
+  45% {color:#00ff00 ;}
+  60% {color: #ffff00 ;}
+  75% {color: #ff7f00;}
+  90% {color: #ff0000;}
+  100% {color: #9400D3 ;}
+}
+.sidebar h3 {
+  font-family: var(--myfont1);
+  font-size: 21px;
+  margin-bottom: 30px;
+  text-shadow: 0.5px 0.5px var(--color2);
+}
+.sidebutton {
+  padding: 2px 10px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: none !important;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--myfont2);
+  border: rgb(255, 221, 220,0)  2px solid;
+}
+.sidebutton:hover {
+  border-bottom: 2px solid var(--color2);
+  color: var(--color2);
+}
+.arrowleft {
+  background-image: url(./img/icons/arrow-left.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 80%;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 315px;
+  margin: 0 !important;
+  cursor: pointer;
+}
+.contact-me {
+  position: absolute;
+  bottom: 15px;
+  font-family: var(--myfont2);
+  font-weight: bold;
+  color: var(--color2);
+}
+.contacts {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom:10px;
+}
+.contacticon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+.facebook {
+  background-image: url(./img/icons/facebook.svg);
+}
+.facebook:hover {
+  background-image: url(./img/icons/facebook\ -\ blue.svg);
+}
+.gmail {
+  background-image: url(./img/icons/gmail.svg);
+}
+.instagram {
+  background-image: url(./img/icons/instagram.svg);
+}
+.instagram:hover {
+  background-image: url(./img/icons/instagram\ -\ pink.svg);
+}
+.contentfield {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding-left: 35px;
+margin: 0 auto auto auto;
+}
+.skills {
+  display: none;}
+.portfolio {
+  display: none;
+}
+.playground {
+  display: none;
+}
+.gallery {
+  display: none; 
+}
+.titlebox {
+  margin: 0 auto 10px auto;
+  border-bottom: 3px var(--color2) solid;
+  text-align: center;
+}
+h1 {
+  font-size: 25px;
+  padding: 10px 0 0 10px;
+  color: var(--color2);
+  text-shadow: 1px 1px black;
+  font-family: var(--myfont1);
+
+}
+.aboutblock {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.aboutblock1 {
+  margin-bottom: 30px;
+}
+.aboutblock span {
+  font-family: var(--myfont3);
+  font-size: 30px;
+}
+.aboutpicture1 {
+  min-width: 150px;
+  height: 150px;
+  background-image: url(./img/picofsindija1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-left: 40px;
+  border: 2px solid var(--color3);
+
+}
+.aboutpicture2 {
+  min-width: 150px;
+  height: 150px;
+  background-image: url(./img/owl.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.skillscontent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.innercircle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+border: solid 2px black;
+margin: 5px;
+background-color: whitesmoke ;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+cursor: pointer;
+}
+.innercircle:hover {
+background-color: var(--color2);
+transition: 1s;
+}
+.innercircle1{
+  background-image: url(./img/icons/html5-brands.svg);
+}
+.innercircle2 {
+background-image: url(./img/icons/css3-brands.svg);
+}
+.innercircle3 {
+background-image: url(./img/icons/js-square-brands.svg);
+}
+.innercircle4 {
+background-image: url(./img/icons/bootstrap-brands.svg);
+}
+.innercircle5 {
+  background-image: url(./img/icons/php.svg);
+  background-size: 90%;
+}
+.showdescription {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; 
+  margin-left: -150px; 
+  z-index: 30;
+  background-color:  rgb(151, 151, 151, 0.8);
+  border-radius: 5px;
+  border: black solid 2px;
+  padding-left: 20px;
+}
+@keyframes changecolor {
+  from {color:var(--maincolor) }
+  to {color:var(--color2) }
+}
+.liststyle {
+  list-style: none;
+}
+.liststyle::before {
+  content: "\2022";
+  color: var(--color2);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  animation: changecolor 3s forwards;
+
+}
+
+.portfoliomain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 5px 10px 10px 0;
+background-color: var(--color3);
+border-radius: 5px;
+border-radius: 5px;
+border: 1px solid var(--color3);
+border-right: none;
+}
+.cardpic {
+  width: 100%;
+  height: 120px;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid var(--color3);
+  cursor: pointer;
+  border-right: none;
+}
+.mogo {
+  background-image: url(./img/pinkcloud.jpg);
+  background-size: cover;
+}
+.loginpage {
+  background-image: url(./img/loginP.png);
+  background-size: cover;
+}
+.loginpage:hover {
+  background-image: url(./img/registrationpage.png);
+}
+.todolist {
+  background-image: url(./img/todolist.png);
+  background-size: cover;
+}
+.visit {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+border: 0.5px black solid;
+color: black;
+border-radius: 5px;
+text-align: center;
+font-weight: bold;
+}
+.card span {
+  border-radius: 0 0 5px 5px;
+  width: 300px;
+  padding: 5px;
+  background-color: whitesmoke;
+  margin: 1px;
+  position: relative;
+}
+.card span p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.card a:hover {
+  background-color: var(--maincolor);
+}
+.mogo {
+  background-image: url(./img/mogo.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mogo:hover {
+  animation: scroll 15s infinite;
+}
+@keyframes scroll {
+  from {background-position-y: top;}
+  to {background-position-y: bottom;}
+}
+.outerdiv {
+  width: 420px;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50vh;
+  margin-left: -210px;
+  z-index: 30;
+  overflow-y: scroll;
+}
+.outerdiv2 {
+  width: 700px;
+  height: 50vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25vh;
+  margin-left: -350px;
+  z-index: 30;
+}
+.mogomax {
+  width: 100%;
+  height: 2330px;
+  position: absolute;
+  top: 0;
+  z-index: 30;
+  background-image: url(./img/mogo.png);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: contain;
+}
+.loginmax {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 30;
+  background-image: url(./img/loginmax.png);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: contain;
+}
+.todomax {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 30;
+  background-image: url(./img/todolist.png);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: contain;
+
+}
+.closebtn {
+  position: fixed;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  right: 0;
+  z-index: 31;
+  background-color: rgb(236, 49, 49);
+  border-radius: 5px;
+  cursor: pointer;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+    }
+@media screen and (max-width: 768px) {
+  .portfoliomain {
+    flex-direction: column;
+  }   
+  .outerdiv2 {
+    width: 100%;
+    height: 50%;
+    margin-top: -25vh;
+    margin-left: -50%;  
+  } 
+}
+.summingfunc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: 100px;
+  border-radius: 5px;
+}
+.answer{
+  width: 100px;
+  height: 33px;
+  background-color: white;
+  }  
+.field {
+  border: var(--color2) 2px solid;
+  outline: black;
+  margin: 5px;
+  padding: 3px;
+  font-size: 20px;
+border-radius: 5px;
+color: black;
+vertical-align: middle;
+}
+.pluss {
+  color: black;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
+  background-color: var(--maincolor);
+}
+.submit {
+  background-color: var(--maincolor);
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1260px) {
+  .arrowleft {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutblock {
+    flex-direction: column;
+}
+.portfoliomain {
+  flex-direction: column;
+}
+  .aboutpicture2 {
+    order: 1;
+    margin: 0;
+    min-width: 120px;
+    height: 120px;
+  }
+  .aboutpicture1 {
+    margin: 0;
+    min-width: 120px;
+    height: 120px;
+  }
+  .summingfunc {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+.field {
+width: 200px;
+text-align: center;
+height: 35px;
+}
+.answer {
+  height: 35px;
+}
+}
+@media screen and (max-width: 500px){
+  h2 {
+    padding-top: 80px;
+  }
+  .innercircle {
+    width: 90px;
+    height: 90px;
+  }
+  
+}
+::-webkit-scrollbar{
+  display: none;
+}
